@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="todo.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="box">
+    <h1>
+      <span class="todoIcon">Todo List <span class="today"></span></span>
+    </h1>
+  </div>
+  <div class="navbar">
+    <a href="#" class="all nav-item">All</a>
+    <a href="#" class="active nav-item">Active</a>
+    <a href="#" class="completedSect nav-item">Completed</a>
+  </div>
+
+  <div class="todo-list">
+    <div class="todo-item">
+      <input type="checkbox" class="item">
+      <span>Task 1</span>
+    </div>
+    <div class="todo-item">
+      <input type="checkbox" class="item">
+      <span>Task 2</span>
+    </div>
+
+
+    <div id="taskList">
+  
+    </div>
+    <input type="text" id="newTaskInput" placeholder="Enter a new task">
+    <button class="btn" onclick="task()">+</button>
+    <!-- Add more todo items here -->
+  </div>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
+  <script src="todoJquery.js"></script>
+</body>
+</html>
